@@ -1,6 +1,8 @@
 # vue-birdwatch
 Birds spotted in the garden during covid lockdown
 
+[Vue birdwatch site] (https://littlereddiesel.github.io/vue-birdwatch/)
+
 ## Project setup
 ```
 npm install
