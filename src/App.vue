@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="{ name: 'bird-list' }">List</router-link> |
+      <router-link :to="{ name: 'bird-show' }">Show bird 1</router-link> |
+      <router-link :to="{ name: 'bird-create' }">Create bird</router-link>
     </div>
     <router-view />
   </div>
