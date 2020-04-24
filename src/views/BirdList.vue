@@ -1,7 +1,16 @@
 <template>
-    <div>
-        <h1>Bird Listing</h1>
-
-        <router-link :to="{ name: 'bird-show', params: { id: '1' } }">Show bird 1</router-link>
+    <div class="display">
+        <h1>Bird List</h1>
+        <BirdCard />
     </div>
 </template>
+
+<script>
+import BirdCard from '@/components/BirdCard.vue';
+
+export default {
+    components: {
+        BirdCard
+    }
+}
+</script>
