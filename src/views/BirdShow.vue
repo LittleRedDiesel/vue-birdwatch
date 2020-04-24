@@ -1,3 +1,9 @@
 <template>
-    <h1>Showing Bird 1</h1>
+    <h1>Showing Bird #{{ id }}</h1>
 </template>
+
+<script>
+export default {
+    props: ['id']
+}
+</script>
