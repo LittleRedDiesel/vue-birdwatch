@@ -1,23 +1,26 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import BirdCreate from "../views/BirdCreate.vue";
+import BirdList from "../views/BirdList.vue";
+import BirdShow from "../views/BirdShow.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "bird-list",
+    component: BirdList
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: "/bird",
+    name: "bird-show",
+    component: BirdShow
+  },
+  {
+    path: "/bird/create",
+    name: "bird-create",
+    component: BirdCreate
   }
 ];
 
