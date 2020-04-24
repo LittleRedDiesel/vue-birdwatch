@@ -13,9 +13,10 @@ const routes = [
     component: BirdList
   },
   {
-    path: "/bird",
+    path: "/bird/:id",
     name: "bird-show",
-    component: BirdShow
+    component: BirdShow,
+    props: true
   },
   {
     path: "/bird/create",
