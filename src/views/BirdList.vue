@@ -2,6 +2,7 @@
     <div class="display">
         <h1>Bird List</h1>
         <BirdCard />
+        <BaseIcon />
     </div>
 </template>
 

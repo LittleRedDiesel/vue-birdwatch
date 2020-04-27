@@ -1,7 +1,7 @@
 <template>
     <router-link class="card-link" :to="{ name: 'bird-show', params: { id: '1' } }">
         <div class="card -shadow">
-            <h4>{{ bird.title }}</h4>
+            <h4>{{ bird.title }} <BaseIcon name="feather" /></h4>
             <img :src='bird.image' />
             <span>At {{ bird.time}} on {{ bird.date }}</span>
             <p>{{ bird.description }}</p>
