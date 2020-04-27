@@ -1,8 +1,9 @@
 <template>
-    <router-link class="card-link" :to="{ name: 'bird-show', params: { id: '1' } }">
+    <router-link class="card-link" :to="{ name: 'bird-show', params: { id: bird.id } }">
         <div class="card -shadow">
-            <h4>{{ bird.title }}</h4>
+            <h4>{{ bird.title }} <BaseIcon name="feather" /></h4>
             <img :src='bird.image' />
+            <p>Sighted: {{ bird.location }}</p>
             <span>At {{ bird.time}} on {{ bird.date }}</span>
             <p>{{ bird.description }}</p>
             <span>{{ bird.attendees.length }} attending</span>
@@ -12,21 +13,9 @@
 
 <script>
     export default {
-        data() {
-            return {
-                bird: {
-                    id: 1,
-                    title: 'Robin',
-                    image: '@/src/assets/img/robin.jpg',
-                    date: 'Thurs April 23, 2020',
-                    time: '6:00',
-                    attendees: [
-                        {id: 'abc123', name: 'Harriet'},
-                        {id: 'def456', name: 'Michael'}
-                    ]
-                }
-            }
-        },
+        props: {
+            bird: Object
+        }
     }
 </script>
 
