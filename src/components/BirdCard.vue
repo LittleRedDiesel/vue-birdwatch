@@ -3,10 +3,8 @@
         <div class="card -shadow">
             <h4>{{ bird.title }} <BaseIcon name="feather" /></h4>
             <img :src='"../img/" + bird.image' />
-            <p>Sighted: {{ bird.location }}</p>
-            <span>At {{ bird.time}} on {{ bird.date }}</span>
-            <p>{{ bird.description }}</p>
-            <span>{{ bird.attendees.length }} attending</span>
+            <p><b>Sighted:</b> {{ bird.location }}</p>
+            <span><b>At:</b> {{ bird.time}} on {{bird.date | formatDate}}</span>
         </div>
     </router-link>
 </template>
@@ -33,7 +31,7 @@
         background-color: #fff5eb;
         color: #555B6E;
         padding: 20px;
-        border: 2px solid #ffe0d5;
+        border: 2px solid #e29578;
         margin-bottom: 24px;
         transition: all 0.2s linear;
         cursor: pointer;
