@@ -2,7 +2,7 @@
     <div class="display display-single">
         <h1>Showing {{ bird.title }}</h1>
         <div class="display-half">
-            <img :src='"../img/" + bird.image' />
+            <img :src='"/img/" + bird.image' />
         </div>
         <div class="display-half">
             <p><b>Sighted:</b> {{ bird.location }}</p>
