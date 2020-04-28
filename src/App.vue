@@ -53,6 +53,26 @@ h1, h2, h3, h4, h5 {
     flex: 1 1 100%;
     margin-bottom: 40px;
   }
+
+  &.display-single {
+    align-items: center;
+    margin: 0 auto;
+
+    img {
+      display: flex;
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  .display-half {
+    flex: 0 1 50%;
+    text-align: left;
+
+    p {
+      padding-right: 100px;
+    }
+  }
 }
 
 a {

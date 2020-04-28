@@ -52,44 +52,6 @@
           "name": "Michael"
         }
       ]
-    },
-    {
-      "id": 3,
-      "title": "Woodpigeon",
-      "image": "pigeon.jpg",
-      "description": "The UK's largest and most common pigeon, the woodpigeon is largely grey with a white neck patch and white wing patches, clearly visible in flight.",
-      "location": "Canal",
-      "date": "2019-02-02T23:27:00.000Z",
-      "time": "1:00",
-      "attendees": [
-        {
-          "id": "3244",
-          "name": "Harriet"
-        },
-        {
-          "id": "3245",
-          "name": "Michael"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Woodpigeon",
-      "image": "pigeon.jpg",
-      "description": "The UK's largest and most common pigeon, the woodpigeon is largely grey with a white neck patch and white wing patches, clearly visible in flight.",
-      "location": "Canal",
-      "date": "2019-02-02T23:27:00.000Z",
-      "time": "1:00",
-      "attendees": [
-        {
-          "id": "3244",
-          "name": "Harriet"
-        },
-        {
-          "id": "3245",
-          "name": "Michael"
-        }
-      ]
     }
   ]
 }
