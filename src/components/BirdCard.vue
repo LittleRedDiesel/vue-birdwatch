@@ -2,7 +2,7 @@
     <router-link class="card-link" :to="{ name: 'bird-show', params: { id: bird.id } }">
         <div class="card -shadow">
             <h4>{{ bird.title }} <BaseIcon name="feather" /></h4>
-            <img :src='"~src/assets/img/" + bird.image' />
+            <img :src='"../img/" + bird.image' />
             <p><b>Sighted:</b> {{ bird.location }}</p>
             <span><b>At:</b> {{ bird.time}} on {{bird.date | formatDate}}</span>
         </div>
@@ -26,10 +26,11 @@
 
     .card {
         display: flex;
-        flex: 1 1 25%;
         flex-direction: column;
         background-color: #fff5eb;
         color: #555B6E;
+        width: 500px;
+        margin: 0 auto;
         padding: 20px;
         border: 2px solid #e29578;
         margin-bottom: 24px;
@@ -37,18 +38,16 @@
         cursor: pointer;
     }
     .card:hover {
-      transform: scale(1.04);
+      transform: scale(1.01);
+      box-shadow: 0 3px 12px 0 #ffe0d5, 0 1px 15px 0 #ffe0d5;
     }
     .card > .title {
       margin: 0;
     }
     
     .card-link {
-        display: flex;
-        flex: 1 1 25%;
-        color: black;
-        text-decoration: none;
-        font-weight: 100;
-        max-width: 24%;
+      color: black;
+      text-decoration: none;
+      font-weight: 100;
     }
 </style>
