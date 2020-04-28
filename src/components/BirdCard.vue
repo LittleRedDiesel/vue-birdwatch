@@ -2,7 +2,7 @@
     <router-link class="card-link" :to="{ name: 'bird-show', params: { id: bird.id } }">
         <div class="card -shadow">
             <h4>{{ bird.title }} <BaseIcon name="feather" /></h4>
-            <img :src='"../img/" + bird.image' />
+            <img :src='"/img/" + bird.image' />
             <p><b>Sighted:</b> {{ bird.location }}</p>
             <span><b>At:</b> {{ bird.time}} on {{bird.date | formatDate}}</span>
         </div>
