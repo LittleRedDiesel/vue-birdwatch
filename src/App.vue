@@ -15,7 +15,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -44,8 +44,15 @@ h1, h2, h3, h4, h5 {
 
 .display {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 30px 40px;
+
+  h1 {
+    flex: 1 1 100%;
+    margin-bottom: 40px;
+  }
 }
 
 a {
