@@ -2,13 +2,12 @@
     <div class="display display-single">
         <h1>Showing {{ bird.title }}</h1>
         <div class="display-half">
-            <img :src='"../img/" + bird.image' />
+            <img :src='"~src/assets/img/" + bird.image' />
         </div>
         <div class="display-half">
             <p><b>Sighted:</b> {{ bird.location }}</p>
             <span><b>At</b> {{ bird.time}} <b>on</b> {{bird.date | formatDate}}</span>
             <p>{{ bird.description }}</p>
-            <span>{{ bird.attendees.length }} attending</span>
         </div>
     </div>
 </template>
