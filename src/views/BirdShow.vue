@@ -6,7 +6,7 @@
         </div>
         <div class="display-half">
             <p><b>Sighted:</b> {{ bird.location }}</p>
-            <span><b>At</b> {{ bird.time}} <b>on</b> {{ bird.date }}</span>
+            <span><b>At</b> {{ bird.time}} <b>on</b> {{bird.date | formatDate}}</span>
             <p>{{ bird.description }}</p>
             <span>{{ bird.attendees.length }} attending</span>
         </div>

@@ -1,10 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import store from "./store";
 
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+import moment from 'moment'
 
 const requireComponent = require.context(
   // The relative path of the components folder
@@ -40,10 +40,16 @@ requireComponent.keys().forEach(fileName => {
   );
 });
 
+Vue.filter('formatDate', function(value) {
+  if (value) {
+    return moment(String(value)).format('DD/MM/YYYY')
+  }
+})
+
+
 Vue.config.productionTip = false;
 
 new Vue({
   router,
-  store,
   render: h => h(App)
 }).$mount("#app");
