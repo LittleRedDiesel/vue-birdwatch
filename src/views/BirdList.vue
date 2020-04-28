@@ -2,13 +2,12 @@
     <div class="display">
         <h1>Bird List</h1>
         <BirdCard v-for="bird in birds" :key="bird.index" :bird="bird" />
-        <BaseIcon />
     </div>
 </template>
 
 <script>
 import BirdCard from '@/components/BirdCard.vue';
-import axios from 'axios'
+import BirdService from '@/services/BirdService.js'
 
 export default {
     components: {
@@ -20,8 +19,7 @@ export default {
         }
     },
     created() {
-        axios
-        .get('http://localhost:3000/events')
+        BirdService.getBirds()
         .then(response => {
             this.birds = response.data
         })
